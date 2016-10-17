@@ -22,7 +22,6 @@ GameObject:
   - 33: {fileID: 33000010810088216}
   - 65: {fileID: 65000014154703716}
   - 23: {fileID: 23000012618677120}
-  - 114: {fileID: 114000013139022658}
   - 64: {fileID: 64000010122027976}
   m_Layer: 0
   m_Name: Cube
@@ -104,17 +103,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000013139022658
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014114173462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89d503b9fe15e8c4ea37e2b2b8c37f68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 1
-  spinSpeed: {x: 0, y: 0, z: 0}
-  spinAxis: {x: 0, y: 1, z: 0}

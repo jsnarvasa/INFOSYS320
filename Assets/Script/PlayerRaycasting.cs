@@ -97,14 +97,6 @@ public class PlayerRaycasting : MonoBehaviour {
         if (InReach == true)
         {
 
-            //popup.SetActive(true);
-
-
-
-            //nameHolder.gameObject.GetComponent<Text>().text = objectName;
-            //dateHolder.gameObject.GetComponent<Text>().text = objectDate;
-            //classificationHolder.gameObject.GetComponent<Text>().text = objectClassification;
-
             //The response produce is a JSON string
             string jsonResponse = Request.GET(_WebsiteURL);
 
@@ -119,7 +111,7 @@ public class PlayerRaycasting : MonoBehaviour {
 
             foreach (Tree tree in trees)
             {
-                if(whatIHit.collider.name == tree.TreeID)
+                if (whatIHit.collider.name == tree.TreeID)
                 {
                     treeID = tree.TreeID;
                     location = tree.Location;
@@ -133,19 +125,9 @@ public class PlayerRaycasting : MonoBehaviour {
             }
 
             GUI.color = Color.white;
-            GUI.Box(new Rect(Screen.width/2, Screen.height/2, 400, 80), "The ecological value of this tree is " + ecologicalValue + "\n" + "The Location is " + location + "\n" + "Data is recorded at " + whenReadingRecorded + "\n" + "Historical significance level is " + historicalSignificance);
+            GUI.Box(new Rect(Screen.width / 2, Screen.height / 2, 400, 80), "The ecological value of this tree is " + ecologicalValue + "\n" + "The Location is " + location + "\n" + "Data is recorded at " + whenReadingRecorded + "\n" + "Historical significance level is " + historicalSignificance);
             Debug.Log("The ID for this object tree is " + treeID);
 
         }
-
-        else
-        {
-            //popup.SetActive(false);
-        }
     }
-
-    //public void Wait(GameObject objectHit)
-    //{
-    //    objectHit.GetComponent<Renderer> = hoverColor;
-    //}
 }
